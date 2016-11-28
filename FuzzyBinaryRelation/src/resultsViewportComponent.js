@@ -70,7 +70,10 @@ function () {
             $scope.$watch('operation', function(){
                 $scope.result = getResult($scope.relation, $scope.operation);
             });
-            $scope.$on('resultsTabSelected', function(){
+            $scope.$watch('relation', function () {
+                $scope.result = getResult($scope.relation, $scope.operation);
+            });
+            $scope.$on('resultsTabSelected', function () {
                 $scope.result = getResult($scope.relation, $scope.operation);
             });
         }
