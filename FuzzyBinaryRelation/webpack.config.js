@@ -45,7 +45,10 @@ module.exports = {
             title: 'Образ нечеткого множества'
         }),
         new HtmlWebpackInlineSourcePlugin(),
-        new WebpackNotifierPlugin()
+        new WebpackNotifierPlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: { warnings: false }
+        })
     ],
     stylus: {
         use: [require('nib')()],

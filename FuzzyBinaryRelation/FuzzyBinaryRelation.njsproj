@@ -66,6 +66,7 @@
     <Content Include="README.md" />
     <Content Include="views\index.jade" />
     <Content Include="views\layout.jade" />
+    <Content Include="Образ нечеткого множества.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\fonts\" />
