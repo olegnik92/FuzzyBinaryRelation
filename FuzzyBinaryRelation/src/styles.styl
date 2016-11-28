@@ -1,0 +1,142 @@
+﻿ @import "../node_modules/angular-material/angular-material.css"
+
+ .place-right{
+	float: right;
+ }
+
+ .app-container{
+    max-width: 1020px;
+    margin: 0 auto;
+ }
+
+.def-column{
+	padding-right: 8px;
+
+	.md-button{
+		margin-left: 0;
+	}
+
+	.fuzzy-elements{
+		padding: 20px 0;
+	}
+}
+
+
+.fuzzy-element{
+
+	.label{
+		transform: translate(0, -4px);
+		display: inline-block;
+	}
+
+	md-input-container{
+		margin: 10px 5px 0 5px;
+	}
+
+	.weight{
+		width: 70px;
+	}
+
+	.md-fab{
+		transform: translate(0, -16px);
+
+		md-icon:before{
+			content: '';
+			display: block;
+			position: absolute;
+			width: 24px;
+			height: 3px;
+			background-color: white;
+			transform: translate(0, 10px) rotate(45deg);
+		}
+		md-icon:after{
+			content: '';
+			display: block;
+			position: absolute;
+			width: 24px;
+			height: 3px;
+			background-color: white;
+			transform: translate(0, 10px) rotate(-45deg);
+		}
+	}
+}
+
+
+.relation-matrix{
+	.header{
+		white-space: nowrap;
+	}
+
+	.col{
+		display: inline-block;
+		width: 70px;
+		text-align: center;
+	}
+
+
+	.row-label{
+		transform: translate(0, -14px);
+		padding-right: 8px;
+	}
+
+	md-input-container{
+		margin: 0;
+		width: 100%;
+	}
+
+}
+
+.results-viewport{
+	.operation-label{
+		padding-right: 10px;
+		transform: translate(0, -3px);
+	}
+
+	tr{
+		height: 40px;
+	}
+}
+
+.icon{
+	position: relative;
+	padding-right: 14px;
+}
+
+.romb:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 0;
+    width: 8px;
+    height: 8px;
+    transform: scale(0.9, 1.4) rotate(45deg);
+	background-color: currentColor;
+}
+
+
+.tri-left:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5px 10px 5px 0;
+	border-color: transparent currentColor transparent transparent;
+}
+
+.tri-right:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5px 0 5px 10px;
+	border-color: transparent transparent transparent currentColor;
+}
